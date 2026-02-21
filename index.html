@@ -2,48 +2,142 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    </title> my mobile store</title>
+    <title>My Digital Things</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             margin: 0;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        header {
+            background: #0d6efd;
             color: white;
+            padding: 20px;
             text-align: center;
         }
 
-        h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
+        nav {
+            background: #ffffff;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
-        h2 {
-            font-size: 20px;
-            font-weight: normal;
-            margin-bottom: 40px;
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0d6efd;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 30px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            color: #0d6efd;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #0d6efd;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* WhatsApp Button */
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            padding: 12px 18px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
         }
 
         footer {
-            position: absolute;
-            bottom: 20px;
-            font-size: 14px;
-            opacity: 0.9;
+            background: #0d6efd;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
 
-    <h1> made by masooma</h1>
-    <h2>Cre</h2>
+<header>
+    <h1>My Digital Things</h1>
+    <p>Smart Digital Products & Online Services</p>
+</header>
 
-    <footer>
-      @2026
-    </footer>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <h2>Our Digital Products</h2>
+
+    <div class="products">
+        <div class="card">
+            <h3>Website Templates</h3>
+            <p>Modern & responsive HTML templates.</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <div class="card">
+            <h3>Mobile UI Designs</h3>
+            <p>Professional designs for mobile apps.</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <div class="card">
+            <h3>E-Books</h3>
+            <p>Learn digital skills easily.</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+    </div>
+</div>
+
+<!-- WhatsApp Chat Button -->
+<a class="whatsapp" 
+   href="https://wa.me/916006364623" 
+   target="_blank">
+   💬 Chat on WhatsApp
+</a>
+
+<footer>
+    <p>© 2026 My Digital Things | Contact: 6006364623</p>
+</footer>
 
 </body>
 </html>
