@@ -1,16 +1,178 @@
-## Hi there 👋
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Smart Electronics Store</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--
-**masoomamasoomazehra760-arch/masoomamasoomazehra760-arch** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+}
 
-Here are some ideas to get you started:
+/* Header */
+header {
+    background: #0f172a;
+    color: #fff;
+    text-align: center;
+    padding: 18px;
+}
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+header h1 {
+    margin: 0;
+}
+
+/* Products */
+.container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.product h3 {
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 18px;
+    color: #16a34a;
+    font-weight: bold;
+}
+
+/* Buttons */
+.cod-btn {
+    display: block;
+    margin-top: 8px;
+    padding: 10px;
+    background: #f59e0b;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.cod-btn:hover {
+    background: #d97706;
+}
+
+.pay-btn {
+    display: block;
+    margin-top: 8px;
+    padding: 10px;
+    background: #22c55e;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.pay-btn:hover {
+    background: #16a34a;
+}
+
+/* Footer */
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Smart Electronics Store</h1>
+    <p>TV • Laptop • Accessories • Gadgets</p>
+</header>
+
+<div class="container">
+
+    <!-- Product 1 -->
+    <div class="product">
+        <img src="https://i.imgur.com/YZ7XkR7.png" alt="Smart LED TV">
+        <h3>Smart LED TV 43"</h3>
+        <p class="price">₹32,999</p>
+
+        <a class="cod-btn"
+           href="https://wa.me/6006364623?text=Hello%20I%20want%20to%20order%20Smart%20LED%20TV%2043%20inch%20(Cash%20on%20Delivery)"
+           target="_blank">Cash on Delivery</a>
+
+        <a class="pay-btn"
+           href="upi://pay?pa=yourupi@upi&pn=Smart%20Electronics%20Store&am=32999&cu=INR"
+           target="_blank">Pay Online</a>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+        <img src="https://i.imgur.com/Z8iZ6Zk.png" alt="Laptop">
+        <h3>Dell Laptop i5</h3>
+        <p class="price">₹58,999</p>
+
+        <a class="cod-btn"
+           href="https://wa.me/6006364623?text=Hello%20I%20want%20to%20order%20Dell%20Laptop%20i5%20(Cash%20on%20Delivery)"
+           target="_blank">Cash on Delivery</a>
+
+        <a class="pay-btn"
+           href="upi://pay?pa=yourupi@upi&pn=Smart%20Electronics%20Store&am=58999&cu=INR"
+           target="_blank">Pay Online</a>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+        <img src="https://i.imgur.com/0rZxFzK.png" alt="Headphones">
+        <h3>Bluetooth Headphones</h3>
+        <p class="price">₹2,499</p>
+
+        <a class="cod-btn"
+           href="https://wa.me/6006364623?text=Hello%20I%20want%20to%20order%20Bluetooth%20Headphones%20(Cash%20on%20Delivery)"
+           target="_blank">Cash on Delivery</a>
+
+        <a class="pay-btn"
+           href="upi://pay?pa=yourupi@upi&pn=Smart%20Electronics%20Store&am=2499&cu=INR"
+           target="_blank">Pay Online</a>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+        <img src="https://i.imgur.com/8yKXsgH.png" alt="Smart Watch">
+        <h3>Smart Watch</h3>
+        <p class="price">₹3,999</p>
+
+        <a class="cod-btn"
+           href="https://wa.me/6006364623?text=Hello%20I%20want%20to%20order%20Smart%20Watch%20(Cash%20on%20Delivery)"
+           target="_blank">Cash on Delivery</a>
+
+        <a class="pay-btn"
+           href="upi://pay?pa=yourupi@upi&pn=Smart%20Electronics%20Store&am=3999&cu=INR"
+           target="_blank">Pay Online</a>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Smart Electronics Store</p>
+    <p>Made with ❤️</p>
+</footer>
+
+</body>
+</html>
